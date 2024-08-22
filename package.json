@@ -8,8 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "prepare": "husky",
-    "test": "jest"
+    "prepare": "husky"
   },
   "dependencies": {
     "husky": "^9.1.5",
