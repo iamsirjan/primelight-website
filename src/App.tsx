@@ -1,5 +1,5 @@
 import './App.css';
-import Provider from '@shangrila-cargo/provider';
+import Provider from '@primelight-school/provider';
 import { LogOut } from './assets/svgs';
 
 function App() {

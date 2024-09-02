@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [react(), svgr()],
   resolve: {
     alias: {
-      '@shangrila-cargo': path.resolve(__dirname, 'src'),
+      '@primelight-school': path.resolve(__dirname, 'src'),
     },
   },
 });

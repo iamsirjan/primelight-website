@@ -20,7 +20,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "@shangrila-cargo/*": ["./src/*"]
+      "@primelight-school/*": ["./src/*"]
     }
   },
   "include": ["src"],
