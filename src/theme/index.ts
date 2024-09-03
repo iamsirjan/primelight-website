@@ -2,6 +2,7 @@ import { extendTheme } from '@chakra-ui/react';
 
 import { THEME_COLORS } from '@primelight-school/theme/colors';
 import { DatePickerTheme } from '@primelight-school/theme/DatePicker.theme';
+import { InputTheme } from '@primelight-school/theme/Input.theme';
 import { TextTheme } from '@primelight-school/theme/text.theme';
 
 const theme = extendTheme({
@@ -37,6 +38,8 @@ const theme = extendTheme({
   components: {
     DatePicker: DatePickerTheme,
     Text: TextTheme,
+    Input: InputTheme,
+    Textarea: InputTheme,
     // keep the components alphabetically
   },
 });

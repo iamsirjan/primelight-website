@@ -80,9 +80,39 @@ export const TextTheme: ComponentStyleConfig = {
       fontSize: '18px',
       color: 'blue_b',
     },
+    display9_light: {
+      fontWeight: '500',
+      fontSize: '18px',
+      color: 'light',
+    },
     display10: {
       fontWeight: 800,
       fontSize: '45px',
+    },
+    display11: {
+      fontWeight: 800,
+      fontSize: '25px',
+      color: 'orange_dd',
+    },
+    display12: {
+      fontWeight: 800,
+      fontSize: '18px',
+      color: 'orange_dd',
+    },
+    display13: {
+      fontWeight: 700,
+      fontSize: '30px',
+      color: 'dark',
+    },
+    display13_light: {
+      fontWeight: 700,
+      fontSize: '30px',
+      color: 'light',
+    },
+    display14: {
+      fontWeight: 400,
+      fontSize: '18px',
+      color: 'light',
     },
   },
 };
