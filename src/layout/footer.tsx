@@ -57,7 +57,7 @@ const Footer = () => {
           <VStack align="flex-start" spacing={2} mb={{ base: 10, md: 0 }}>
             <Text variant="display13_light">Follow us</Text>
             <HStack cursor={'pointer'}>
-              <IconButton icon={<FaFacebookF />} />
+              <IconButton icon={<FaFacebookF color="red" />} />
 
               <Text variant="display9_light">Facebook</Text>
             </HStack>

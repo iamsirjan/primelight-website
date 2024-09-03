@@ -94,6 +94,11 @@ export const TextTheme: ComponentStyleConfig = {
       fontSize: '25px',
       color: 'orange_dd',
     },
+    display11_400: {
+      fontWeight: 400,
+      fontSize: '25px',
+      color: 'orange_dd',
+    },
     display12: {
       fontWeight: 800,
       fontSize: '18px',
@@ -109,10 +114,20 @@ export const TextTheme: ComponentStyleConfig = {
       fontSize: '30px',
       color: 'light',
     },
+    display13_800_light: {
+      fontWeight: 800,
+      fontSize: '30px',
+      color: 'light',
+    },
     display14: {
       fontWeight: 400,
       fontSize: '18px',
       color: 'light',
+    },
+    display15: {
+      fontWeight: 400,
+      fontSize: '18px',
+      color: 'dark_100',
     },
   },
 };
