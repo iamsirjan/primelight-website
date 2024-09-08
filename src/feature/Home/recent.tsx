@@ -3,15 +3,16 @@ import {
   Container,
   Flex,
   Grid,
+  Image,
   Text,
   useBreakpointValue,
 } from '@chakra-ui/react';
 import YouTube, { YouTubeEvent } from 'react-youtube';
-
+import YoutubeImage from '@primelight-school/assets/Y Play.jpg';
 const Recent = () => {
   const columns = useBreakpointValue({ base: 1, md: 1, lg: 2 });
   const isSmallerThanMd = useBreakpointValue({ base: true, md: false });
-  const videoId = 'dQw4w9WgXcQ';
+  const videoId = '';
 
   const opts = {
     height: '500',
@@ -36,7 +37,11 @@ const Recent = () => {
         gridTemplateColumns={`repeat(${columns}, 1fr)`} // Grid layout with responsive columns
         gap={{ base: '40px', md: '40px', lg: '40px' }} // Responsive gap
       >
-        <YouTube videoId={videoId} opts={opts} onReady={onReady} />
+        {videoId ? (
+          <YouTube videoId={videoId} opts={opts} onReady={onReady} />
+        ) : (
+          <Image src={YoutubeImage} style={{ height: '100%', width: '100%' }} />
+        )}
         <Flex direction={'column'} gap={4}>
           <Text variant={'display11'}>Recent Update</Text>
           <Text variant={'display12'}>Entrance Examination Result Out</Text>

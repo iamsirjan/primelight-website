@@ -9,6 +9,15 @@ import PrimeLightLogo from './primelight.svg?react';
 import TeacherLogo from './teacher.svg?react';
 import HouseLogo from './house.svg?react';
 import PeopleLogo from './profile-2user.svg?react';
+import MissionLogo from './mission.svg?react';
+import VissionLogo from './vision.svg?react';
+import DisciplineLogo from './discipline.svg?react';
+import ExcelLogo from './excel.svg?react';
+import IntegrityLogo from './integrity.svg?react';
+import ServiceLogo from './service.svg?react';
+import TeamLogo from './team.svg?react';
+import TickLogo from './tick.svg?react';
+import ArrowDownLogo from './arrowdown.svg?react';
 export {
   LogOut,
   PhoneLogo,
@@ -21,4 +30,13 @@ export {
   TeacherLogo,
   HouseLogo,
   PeopleLogo,
+  MissionLogo,
+  VissionLogo,
+  DisciplineLogo,
+  ExcelLogo,
+  IntegrityLogo,
+  ServiceLogo,
+  TeamLogo,
+  TickLogo,
+  ArrowDownLogo,
 };

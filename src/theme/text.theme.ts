@@ -38,13 +38,13 @@ export const TextTheme: ComponentStyleConfig = {
     },
     display2: {
       fontWeight: '600',
-      fontSize: '1.2em',
+      fontSize: '1em',
       lineHeight: '1.2em',
       color: 'light',
     },
     display3: {
       fontWeight: '700',
-      fontSize: '1.5em',
+      fontSize: '1.3em',
       lineHeight: '1.5em',
       color: 'light',
     },

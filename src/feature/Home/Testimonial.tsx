@@ -39,7 +39,7 @@ const TestimonialsSection: React.FC = () => {
       }}
     />
   );
-  const isSmallerThanSm = useBreakpointValue({ base: true, md: false });
+  const isSmallerThanSm = useBreakpointValue({ base: true, lg: false });
 
   const PrevArrow = ({ onClick }: { onClick?: () => void }) => (
     <FaChevronLeft
@@ -71,7 +71,7 @@ const TestimonialsSection: React.FC = () => {
       mt={'80px'}
       bg="blue_d"
       position="relative"
-      backgroundImage={`url('${Background}')`} // Use backticks for URL interpolation
+      backgroundImage={`url('${!isSmallerThanSm && Background}')`} // Use backticks for URL interpolation
       backgroundSize="cover"
       backgroundPosition="center"
       opacity={0.9} // Adjust opacity level here

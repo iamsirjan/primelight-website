@@ -7,10 +7,11 @@ import Basic from '@primelight-school/assets/basic.jpg';
 
 const OurSchools = () => {
   const columns = useBreakpointValue({ base: 1, md: 2, lg: 2 }); // Adjusted for larger screens
+  const isSmallerThanSm = useBreakpointValue({ base: true, lg: false });
 
   return (
     <Flex
-      marginTop={'100px'}
+      marginTop={'50px'}
       direction="column"
       align="center"
       justify="center"
@@ -25,7 +26,8 @@ const OurSchools = () => {
         left={0}
         right={0}
         bottom={0}
-        backgroundImage={`url('${Background}')`} // Use backticks for URL interpolation
+        bg="blue_d"
+        backgroundImage={`url('${!isSmallerThanSm && Background}')`} // Use backticks for URL interpolation
         backgroundSize="cover"
         backgroundPosition="center"
         opacity={0.9} // Adjust opacity level here
@@ -49,13 +51,9 @@ const OurSchools = () => {
           mt={4}
         >
           <Card img={DayCare} heading="Creche and" value="Day Care" />
-          <Card
-            img={Pre}
-            heading="Pre - Nursery School"
-            value="Classes 1 2 3"
-          />
+          <Card img={Pre} heading="Nursery School" value="Classes 1 2 3" />
           <Card img={Pri} heading="Primary School" value="Classes 1 - 6" />
-          <Card img={Basic} heading="Basic" value="Classes 1 - 6" />
+          <Card img={Basic} heading="Secondary" value="Classes 1 - 6" />
         </Grid>
       </Flex>
     </Flex>

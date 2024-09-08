@@ -4,10 +4,10 @@ import {
   Text,
   VStack,
   HStack,
-  Icon,
   Divider,
   useBreakpointValue,
   Grid,
+  Image,
 } from '@chakra-ui/react';
 import { IconButton } from '@primelight-school/component/IconButton';
 import {
@@ -22,6 +22,7 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
 } from 'react-icons/fa';
+import LogoBlue from '@primelight-school/assets/logo_blue.png';
 
 const Footer = () => {
   const columns = useBreakpointValue({ base: 1, md: 2, lg: 3 });
@@ -36,10 +37,11 @@ const Footer = () => {
       >
         {/* Logo and Description */}
         <VStack align="flex-start" spacing={3} mb={{ base: 10, md: 0 }}>
-          <Icon boxSize={12} as={FaMapMarkerAlt} color={'orange_dd'} />{' '}
+          <Image src={LogoBlue} height={'80px'} w={'80px'} />
+
           {/* Placeholder for logo */}
           <Text
-            w={{ base: '100%', md: '100%', lg: '30%' }}
+            w={{ base: '100%', md: '100%', lg: '70%' }}
             variant={'display14'}
           >
             Our main focus is to provide a Christ-centered education that

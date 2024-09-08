@@ -15,19 +15,23 @@ const WelcomeSection = () => {
   return (
     <Container
       maxW={{ base: '700px', md: '700px', lg: '1300px' }}
-      marginTop={'100px'}
+      marginTop={'50px'}
     >
       <Grid
         backgroundColor={isSmallerThanMd ? 'white_re' : 'none'}
         width="100%"
+        padding={'20px'}
         alignItems={'center'}
+        justifyContent={'center'}
         gridTemplateColumns={`repeat(${columns}, 1fr)`} // Grid layout with responsive columns
         gap={{ base: '20px', md: '20px', lg: '30px' }} // Responsive gap
       >
-        <Image
-          src={WelcomeImage}
-          height={{ base: '400px', md: '700px', lg: '700px' }}
-        />
+        <Flex justifyContent={'center'}>
+          <Image
+            src={WelcomeImage}
+            height={{ base: '400px', md: '700px', lg: '700px' }}
+          />
+        </Flex>
         <Flex direction={'column'} gap={4}>
           <Text variant={'display4'}>Welcome to our Website</Text>
           <Flex direction={'column'}>

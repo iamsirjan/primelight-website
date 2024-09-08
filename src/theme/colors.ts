@@ -14,4 +14,5 @@ export const THEME_COLORS = {
   orange_dd: '#53280A',
   white_d2: '#808080',
   dark_100: '#131515',
+  orange: '#F9781D',
 };

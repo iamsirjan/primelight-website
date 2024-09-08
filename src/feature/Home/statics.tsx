@@ -20,11 +20,11 @@ const staticsData = [
 
 const Statics = () => {
   // Determine the number of columns based on screen size
-  const columns = useBreakpointValue({ base: 1, md: 2, lg: 4 });
+  const columns = useBreakpointValue({ base: 2, sm: 2, md: 2, lg: 4 });
   return (
     <Flex
       background={'blue_d'}
-      marginTop={'80px'}
+      marginTop={{ base: '35px', md: '30px', lg: '45px', xl: '40px' }}
       padding={{ base: '20px', md: '45px 60px', lg: '45px 122px' }}
       direction={'column'}
       justifyContent={'center'}
@@ -74,7 +74,9 @@ const StaticsBox = ({ icon, header, label }: StaticsBoxProps) => {
       {icon}
       <Flex direction={'column'} gap={1} textAlign={'center'}>
         <Text variant={'display3'}>{header}</Text>
-        <Text variant={'display1_500'}>{label}</Text>
+        <Text variant={'display1_500'} lineHeight={'24px'}>
+          {label}
+        </Text>
       </Flex>
     </Flex>
   );
