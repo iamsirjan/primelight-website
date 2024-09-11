@@ -7,7 +7,6 @@ import {
   Linkedln,
   Twitter,
 } from '@primelight-school/assets/svgs';
-import { Link } from 'react-router-dom';
 
 const Topbar = () => {
   const phoneFlex = useBreakpointValue({ base: 1, md: 0.5, lg: 1 });
@@ -36,30 +35,30 @@ const Topbar = () => {
         </Flex>
       ) : (
         <Flex gap={'10px'}>
-          <Link
+          <a
             target="_blank"
-            to={
+            href={
               'https://www.facebook.com/profile.php?id=61563594305866&mibextid=LQQJ4d'
             }
           >
             <IconButton icon={<FaceBook />} />
-          </Link>
-          <Link
+          </a>
+          <a
             target="_blank"
-            to={'https://x.com/primelight_sch?t=843VgHT5dEFyQ4Q2mdfWHQ&s=08'}
+            href={'https://x.com/primelight_sch?t=843VgHT5dEFyQ4Q2mdfWHQ&s=08'}
           >
             <IconButton icon={<Twitter />} />
-          </Link>
-          <Link to={'https://wa.me/2348142799303?text=Hi'}>
+          </a>
+          <a href={'https://wa.me/2348142799303?text=Hi'} target="_blank">
             <IconButton icon={<Whatsapp />} />
-          </Link>
-          <Link
-            to={
+          </a>
+          <a
+            href={
               'https://www.linkedin.com/in/the-primelight-schools-73b56431a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
             }
           >
             <IconButton icon={<Linkedln />} />
-          </Link>
+          </a>
         </Flex>
       )}
     </Flex>

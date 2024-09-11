@@ -9,7 +9,6 @@ import {
   Textarea,
   useBreakpointValue,
 } from '@chakra-ui/react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import { useState } from 'react';
 
@@ -45,20 +44,16 @@ const GetInTouch = () => {
           gridTemplateColumns={`repeat(${columns}, 1fr)`} // Grid layout with responsive columns
           gap={{ base: '40px', md: '40px', lg: '40px' }} // Responsive gap
         >
-          <MapContainer
-            center={[6.0378807, 6.8865619]}
-            zoom={12}
-            scrollWheelZoom={false}
-            style={{ height: '400px', width: '100%' }}
-          >
-            <TileLayer
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
-            <Marker position={[6.0378807, 6.8865619]}>
-              <Popup>PrimeLight School</Popup>
-            </Marker>
-          </MapContainer>
+          <Box
+            as="iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.6837586073665!2d6.8865619!3d6.0378807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10439777a2ed4365%3A0xae682ebf416fb479!2sMount%20Zion%20Anglican%20Church!5e0!3m2!1sen!2sng!4v1694124724519!5m2!1sen!2sng"
+            width="100%"
+            height="400px"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
           <Flex direction={'column'}>
             <Text variant={'display13'}>Get in Touch with us</Text>
             <Flex direction={'column'} gap={4} mt={4}>

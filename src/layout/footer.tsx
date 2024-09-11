@@ -23,7 +23,6 @@ import {
   FaMapMarkerAlt,
   FaLinkedin,
 } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const columns = useBreakpointValue({ base: 1, md: 2, lg: 3 });
@@ -61,14 +60,15 @@ const Footer = () => {
             <Text variant="display13_light">Follow us</Text>
             <HStack cursor={'pointer'}>
               <IconButton icon={<FaFacebookF color="red" />} />
-              <Link
-                to={
+              <a
+                href={
                   ' https://www.facebook.com/profile.php?id=61563594305866&mibextid=LQQJ4d'
                 }
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <Text variant="display9_light">Facebook</Text>
-              </Link>
+              </a>
             </HStack>
             <HStack
               cursor={'pointer'}
@@ -96,14 +96,14 @@ const Footer = () => {
               }}
             >
               <IconButton icon={<FaTwitter color="red" />} />
-              <Link
-                to={
+              <a
+                href={
                   'https://x.com/primelight_sch?t=843VgHT5dEFyQ4Q2mdfWHQ&s=08'
                 }
                 target="_blank"
               >
                 <Text variant="display9_light">Twitter</Text>
-              </Link>
+              </a>
             </HStack>
             <HStack
               cursor={'pointer'}
@@ -112,13 +112,14 @@ const Footer = () => {
               }}
             >
               <IconButton icon={<FaLinkedin color="red" />} />
-              <Link
-                to={
+              <a
+                href={
                   'https://www.linkedin.com/in/the-primelight-schools-73b56431a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
                 }
+                target="_blank"
               >
                 <Text variant="display9_light">LinkedIn</Text>
-              </Link>
+              </a>
             </HStack>
             <HStack
               cursor={'pointer'}
@@ -145,9 +146,9 @@ const Footer = () => {
               }}
             >
               <IconButton icon={<FaWhatsapp color="red" />} />
-              <Link to={' https://wa.me/2348142799303?text=Hi'} target="_blank">
+              <a href={' https://wa.me/2348142799303?text=Hi'} target="_blank">
                 <Text variant="display9_light">WhatsApp</Text>
-              </Link>
+              </a>
             </HStack>
           </VStack>
 
