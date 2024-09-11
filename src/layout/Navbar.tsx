@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
       background={'white'}
       height={'fit-content'}
       alignItems={'center'}
-      padding={'22px 22px'}
+      padding={'10px 22px'}
       justifyContent={'space-between'}
       position={'relative'}
     >
@@ -109,26 +109,28 @@ const Navbar: React.FC = () => {
           >
             SCHOOLS
           </Text>
-          <Text
-            variant="display1_dark"
-            cursor={'pointer'}
-            onClick={() => scrollToSection('admissions')}
-            _after={{
-              content: '""',
-              display: 'block',
-              borderBottom: '2px solid black',
-              width: '100%',
-              transform: 'scaleX(0)',
-              transition: 'transform 0.3s ease',
-            }}
-            _hover={{
-              _after: {
-                transform: 'scaleX(1)',
-              },
-            }}
-          >
-            ADMISSIONS
-          </Text>
+          <Link to={'https://forms.gle/dDRpd6pR3ZDPGBB4A'} target="_blank">
+            <Text
+              variant="display1_dark"
+              cursor={'pointer'}
+              onClick={() => scrollToSection('schools')}
+              _after={{
+                content: '""',
+                display: 'block',
+                borderBottom: '2px solid black',
+                width: '100%',
+                transform: 'scaleX(0)',
+                transition: 'transform 0.3s ease',
+              }}
+              _hover={{
+                _after: {
+                  transform: 'scaleX(1)',
+                },
+              }}
+            >
+              ADMISSIONS
+            </Text>
+          </Link>
           <Text
             variant="display1_dark"
             cursor={'pointer'}
@@ -259,27 +261,31 @@ const Navbar: React.FC = () => {
                 >
                   SCHOOLS
                 </Text>
-                <Text
-                  variant="display1_dark"
-                  fontSize={'sm'}
-                  cursor={'pointer'}
-                  onClick={() => scrollToSection('admissions')}
-                  _after={{
-                    content: '""',
-                    display: 'block',
-                    borderBottom: '2px solid black',
-                    width: '100%',
-                    transform: 'scaleX(0)',
-                    transition: 'transform 0.3s ease',
-                  }}
-                  _hover={{
-                    _after: {
-                      transform: 'scaleX(1)',
-                    },
-                  }}
+                <Link
+                  to={'https://forms.gle/dDRpd6pR3ZDPGBB4A'}
+                  target="_blank"
                 >
-                  ADMISSIONS
-                </Text>
+                  <Text
+                    variant="display1_dark"
+                    fontSize={'sm'}
+                    cursor={'pointer'}
+                    _after={{
+                      content: '""',
+                      display: 'block',
+                      borderBottom: '2px solid black',
+                      width: '100%',
+                      transform: 'scaleX(0)',
+                      transition: 'transform 0.3s ease',
+                    }}
+                    _hover={{
+                      _after: {
+                        transform: 'scaleX(1)',
+                      },
+                    }}
+                  >
+                    ADMISSIONS
+                  </Text>
+                </Link>
                 <Text
                   variant="display1_dark"
                   fontSize={'sm'}

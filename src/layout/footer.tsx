@@ -7,8 +7,8 @@ import {
   Divider,
   useBreakpointValue,
   Grid,
-  Image,
 } from '@chakra-ui/react';
+import { PrimeLightLogoWhite } from '@primelight-school/assets/svgs';
 import { IconButton } from '@primelight-school/component/IconButton';
 import {
   FaFacebookF,
@@ -21,8 +21,9 @@ import {
   FaPhone,
   FaEnvelope,
   FaMapMarkerAlt,
+  FaLinkedin,
 } from 'react-icons/fa';
-import LogoBlue from '@primelight-school/assets/logo_blue.png';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const columns = useBreakpointValue({ base: 1, md: 2, lg: 3 });
@@ -37,7 +38,7 @@ const Footer = () => {
       >
         {/* Logo and Description */}
         <VStack align="flex-start" spacing={3} mb={{ base: 10, md: 0 }}>
-          <Image src={LogoBlue} height={'80px'} w={'80px'} />
+          <PrimeLightLogoWhite height={'80px'} width={'80px'} />
 
           {/* Placeholder for logo */}
           <Text
@@ -60,8 +61,14 @@ const Footer = () => {
             <Text variant="display13_light">Follow us</Text>
             <HStack cursor={'pointer'}>
               <IconButton icon={<FaFacebookF color="red" />} />
-
-              <Text variant="display9_light">Facebook</Text>
+              <Link
+                to={
+                  ' https://www.facebook.com/profile.php?id=61563594305866&mibextid=LQQJ4d'
+                }
+                target="_blank"
+              >
+                <Text variant="display9_light">Facebook</Text>
+              </Link>
             </HStack>
             <HStack
               cursor={'pointer'}
@@ -89,7 +96,14 @@ const Footer = () => {
               }}
             >
               <IconButton icon={<FaTwitter color="red" />} />
-              <Text variant="display9_light">Twitter</Text>
+              <Link
+                to={
+                  'https://x.com/primelight_sch?t=843VgHT5dEFyQ4Q2mdfWHQ&s=08'
+                }
+                target="_blank"
+              >
+                <Text variant="display9_light">Twitter</Text>
+              </Link>
             </HStack>
             <HStack
               cursor={'pointer'}
@@ -97,8 +111,14 @@ const Footer = () => {
                 color: 'link',
               }}
             >
-              <IconButton icon={<FaTiktok color="red" />} />
-              <Text variant="display9_light">TextedIn</Text>
+              <IconButton icon={<FaLinkedin color="red" />} />
+              <Link
+                to={
+                  'https://www.linkedin.com/in/the-primelight-schools-73b56431a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
+                }
+              >
+                <Text variant="display9_light">LinkedIn</Text>
+              </Link>
             </HStack>
             <HStack
               cursor={'pointer'}
@@ -125,7 +145,9 @@ const Footer = () => {
               }}
             >
               <IconButton icon={<FaWhatsapp color="red" />} />
-              <Text variant="display9_light">WhatsApp</Text>
+              <Link to={' https://wa.me/2348142799303?text=Hi'} target="_blank">
+                <Text variant="display9_light">WhatsApp</Text>
+              </Link>
             </HStack>
           </VStack>
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Text, useBreakpointValue } from '@chakra-ui/react';
+import { Box, Flex, Text, useBreakpointValue } from '@chakra-ui/react';
 import TestimonialCard from '../../component/TestimonialCard';
 import Slider from 'react-slick';
 import { FaChevronRight } from 'react-icons/fa';
@@ -77,6 +77,16 @@ const TestimonialsSection: React.FC = () => {
       opacity={0.9} // Adjust opacity level here
       zIndex={1} // Ensure it's behind other content
     >
+      <Flex
+        position="absolute"
+        top={0}
+        left={0}
+        right={0}
+        bottom={0}
+        bg="rgba(10, 30, 54, 0.8)" // #0A1E36 with 80% opacity
+        zIndex={-1}
+        pointerEvents="none"
+      />
       <Text
         textAlign="center"
         mb={8}

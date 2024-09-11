@@ -34,6 +34,16 @@ const OurSchools = () => {
         zIndex={-1} // Ensure it's behind other content
         pointerEvents="none" // Optional: makes sure background does not interfere with interactions
       />
+      <Flex
+        position="absolute"
+        top={0}
+        left={0}
+        right={0}
+        bottom={0}
+        bg="rgba(10, 30, 54, 0.8)" // #0A1E36 with 80% opacity
+        zIndex={-1}
+        pointerEvents="none"
+      />
 
       {/* Main Content */}
       <Flex
@@ -51,9 +61,9 @@ const OurSchools = () => {
           mt={4}
         >
           <Card img={DayCare} heading="Creche and" value="Day Care" />
-          <Card img={Pre} heading="Nursery School" value="Classes 1 2 3" />
-          <Card img={Pri} heading="Primary School" value="Classes 1 - 6" />
-          <Card img={Basic} heading="Secondary" value="Classes 1 - 6" />
+          <Card img={Pre} heading="Pre-Nursery" value="" />
+          <Card img={Pri} heading="Nursery" value="1-3" />
+          <Card img={Basic} heading="Basic" value="1 - 6" />
         </Grid>
       </Flex>
     </Flex>

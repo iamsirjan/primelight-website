@@ -9,6 +9,7 @@ import {
 } from '@chakra-ui/react';
 import YouTube, { YouTubeEvent } from 'react-youtube';
 import YoutubeImage from '@primelight-school/assets/Y Play.jpg';
+import { Link } from 'react-router-dom';
 const Recent = () => {
   const columns = useBreakpointValue({ base: 1, md: 1, lg: 2 });
   const isSmallerThanMd = useBreakpointValue({ base: true, md: false });
@@ -49,16 +50,18 @@ const Recent = () => {
           <Text variant={'display12'}>Regular Student Login</Text>
           <Text variant={'display9'}>Click Here</Text>
           <Text variant={'display12'}>Are you A New Student?</Text>
-          <Button
-            _hover={{
-              backgroundColor: 'blue_d',
-            }}
-            bg="blue_d"
-            color="light"
-            width={'300px'}
-          >
-            Enrol Now
-          </Button>
+          <Link to={'https://forms.gle/dDRpd6pR3ZDPGBB4A'} target="_blank">
+            <Button
+              _hover={{
+                backgroundColor: 'blue_d',
+              }}
+              bg="blue_d"
+              color="light"
+              width={'300px'}
+            >
+              Enrol Now
+            </Button>
+          </Link>
         </Flex>
       </Grid>
     </Container>

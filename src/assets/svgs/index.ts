@@ -6,6 +6,7 @@ import Linkedln from './LinkedIn.svg?react';
 import Twitter from './pajamas_twitter.svg?react';
 import Whatsapp from './whatsapp.svg?react';
 import PrimeLightLogo from './primelight.svg?react';
+import PrimeLightLogoWhite from './logo_white.svg?react';
 import TeacherLogo from './teacher.svg?react';
 import HouseLogo from './house.svg?react';
 import PeopleLogo from './profile-2user.svg?react';
@@ -39,4 +40,5 @@ export {
   TeamLogo,
   TickLogo,
   ArrowDownLogo,
+  PrimeLightLogoWhite,
 };

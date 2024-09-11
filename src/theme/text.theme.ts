@@ -42,6 +42,12 @@ export const TextTheme: ComponentStyleConfig = {
       lineHeight: '1.2em',
       color: 'light',
     },
+    display2_small: {
+      fontWeight: '500',
+      fontSize: '0.9em',
+      lineHeight: '1.2em',
+      color: 'light',
+    },
     display3: {
       fontWeight: '700',
       fontSize: '1.3em',
